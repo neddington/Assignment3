@@ -6,8 +6,8 @@ import main.java.behaviors.*;
 public class ExecutiveInterview extends Interview {
     public ExecutiveInterview() {
         schedulingBehavior = new ScheduleOne();
-        interviewingBehavior = new ShareJobInfo(); // Placeholder for executive meeting
-        teamingBehavior = new SkipLevelReview(); // Placeholder for executive review
+        interviewingBehavior = new VPInterview();
+        teamingBehavior = new ExecutiveReview();
         notifyingBehavior = new Notify();
     }
 }
